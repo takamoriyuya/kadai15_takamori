@@ -1,0 +1,78 @@
+
+/** janken **/
+
+
+.header-title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family:'Volkhov', serif;
+  font-size: 20px;
+  color: #424242;
+  background-color: #BDBDBD;
+}
+
+.hand-cover{
+    background-color: #ECF6CE;
+    display: flex;
+    justify-content: center;
+}
+
+.hand{
+  display: flex;
+  justify-content:center;
+  margin: auto;
+  width:40%;
+  padding-left: 350px;
+}
+
+.main-img{
+  display: flex;
+  justify-content:center;
+  margin: auto;
+  width: 100%;
+  object-fit:contain;
+}
+
+
+.enm{
+  justify-content:center;
+  text-align:center;
+  margin: auto;
+}
+
+.result-content{
+  align-items: center;
+  margin: auto;
+
+}
+
+
+.title{
+  font-family:'Volkhov', serif;
+  font-size: 18px;
+  color: #424242;
+
+}
+
+.result{
+  display: flex;
+  justify-content:center;
+  margin: auto;
+  font-family:'Volkhov', serif;
+  font-size: 18px;
+  color: #424242;
+  padding-top: 10px;
+}
+
+.gif {
+  padding-top: 6px;
+  display: flex;
+  background: url(../img/janken.gif) no-repeat center center;
+  zoom:1.6;
+  width: 400px;
+  height: 400px;
+}

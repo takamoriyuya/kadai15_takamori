@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <title>Janken</title>
+</head>
+<body>
+
+<div class="main">
+
+<header class="header-title">Janken Game</header>
+<div class="enm"><img src="./img/1504086019LtCEbWB9l2FK6hf1504085766.gif" alt="" class="main-img" ></div>
+
+
+
+<div class="hand-cover">
+ <div class="hand">
+ <div class="btn"><img src="./img/janken12.png" alt="" width="60%"></div>
+ <div class="btn"><img src="./img/janken22.png" alt="" width="60%"></div>
+ <div class="btn"><img src="./img/janken32.png" alt="" width="60%"></div>
+ </div>
+
+<div class="result-content">
+<div class="title">score</div>
+<div class="result"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var btn = document.getElementsByClassName('btn');
+var enm = document.getElementsByClassName('enm');
+var result = document.getElementsByClassName('result');
+
+['<div class="btn">ボタンだよ</div>','<div class="btn">ボタンだよ</div>']
+
+console.log(btn);
+console.log(enm);
+console.log(result);
+
+btn[0].addEventListener('click',function(){
+  var rand = Math.floor(Math.random() * 3);
+  console.log(Math.random());
+  if(rand == 0){
+  console.log('0ができました');
+  enm[0].innerHTML = '<img src="./img/goo.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'アイコ';
+} else if(rand == 1){
+  console.log('1ができました');
+  enm[0].innerHTML = '<img src="./img/choki.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'カチ';
+}else if(rand == 2){
+  console.log('2ができました');
+  enm[0].innerHTML = '<img src="./img/par.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'マケ';
+}
+});
+
+
+btn[1].addEventListener('click',function(){
+  var rand = Math.floor(Math.random() * 3);
+  console.log(Math.random());
+
+  if(rand == 0){
+  console.log('0ができました');
+  enm[0].innerHTML = '<img src="./img/goo.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'マケ';
+} else if(rand == 1){
+  console.log('1ができました');
+  enm[0].innerHTML = '<img src="./img/choki.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'アイコ';
+}else if(rand == 2){
+  console.log('2ができました');
+  enm[0].innerHTML = '<img src="./img/par.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'カチ';
+}
+});
+
+
+btn[2].addEventListener('click',function(){
+  var rand = Math.floor(Math.random() * 3);
+  console.log(Math.random());
+
+  if(rand == 0){
+  console.log('0ができました');
+  enm[0].innerHTML = '<img src="./img/goo.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'カチ';
+} else if(rand == 1){
+  console.log('1ができました');
+  enm[0].innerHTML = '<img src="./img/choki.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'マケ';
+}else if(rand == 2){
+  console.log('2ができました');
+  enm[0].innerHTML = '<img src="./img/par.jpg" alt="" class="main-img" >';
+  result[0].innerHTML = 'アイコ';
+}
+});
+
+
+</script>
+
+</body>
+</html>

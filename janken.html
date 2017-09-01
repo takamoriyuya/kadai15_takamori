@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <title>Janken</title>
+
+<bgsound src="example.wav" loop="3" balance="0" volume="0">
 </head>
 <body>
 
@@ -22,16 +24,17 @@
 
 <div class="hand-cover">
  <div class="hand">
- <div class="btn"><img src="./img/janken12.png" alt="" width="60%"></div>
+ <div class="btn"><img src="./img/janken12.png" alt="" width="60%" ></div>
  <div class="btn"><img src="./img/janken22.png" alt="" width="60%"></div>
  <div class="btn"><img src="./img/janken32.png" alt="" width="60%"></div>
+ </div>
  </div>
 
 <div class="result-content">
 <div class="title">score</div>
 <div class="result"></div>
 </div>
-</div>
+
 </div>
 
 
@@ -47,9 +50,14 @@
 
 <script>
 
+<!--
+setTimeout("location.reload()",1000*10);
+//-->
+
 var btn = document.getElementsByClassName('btn');
 var enm = document.getElementsByClassName('enm');
 var result = document.getElementsByClassName('result');
+
 
 ['<div class="btn">ボタンだよ</div>','<div class="btn">ボタンだよ</div>']
 
@@ -63,15 +71,15 @@ btn[0].addEventListener('click',function(){
   if(rand == 0){
   console.log('0ができました');
   enm[0].innerHTML = '<img src="./img/goo.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'アイコ';
+  result[0].innerHTML = '';
 } else if(rand == 1){
   console.log('1ができました');
   enm[0].innerHTML = '<img src="./img/choki.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'カチ';
+  result[0].innerHTML = '1';
 }else if(rand == 2){
   console.log('2ができました');
   enm[0].innerHTML = '<img src="./img/par.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'マケ';
+  result[0].innerHTML = '0';
 }
 });
 
@@ -83,15 +91,15 @@ btn[1].addEventListener('click',function(){
   if(rand == 0){
   console.log('0ができました');
   enm[0].innerHTML = '<img src="./img/goo.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'マケ';
+  result[0].innerHTML = '0';
 } else if(rand == 1){
   console.log('1ができました');
   enm[0].innerHTML = '<img src="./img/choki.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'アイコ';
+  result[0].innerHTML = '';
 }else if(rand == 2){
   console.log('2ができました');
   enm[0].innerHTML = '<img src="./img/par.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'カチ';
+  result[0].innerHTML = '1';
 }
 });
 
@@ -103,15 +111,15 @@ btn[2].addEventListener('click',function(){
   if(rand == 0){
   console.log('0ができました');
   enm[0].innerHTML = '<img src="./img/goo.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'カチ';
+  result[0].innerHTML = '1';
 } else if(rand == 1){
   console.log('1ができました');
   enm[0].innerHTML = '<img src="./img/choki.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'マケ';
+  result[0].innerHTML = '0';
 }else if(rand == 2){
   console.log('2ができました');
   enm[0].innerHTML = '<img src="./img/par.jpg" alt="" class="main-img" >';
-  result[0].innerHTML = 'アイコ';
+  result[0].innerHTML = '';
 }
 });
 

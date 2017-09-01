@@ -1,4 +1,47 @@
 
+/** head **/
+
+.head-main{
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  background-image: url(../img/janken.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+.head-img{
+  margin-top: 600px;
+  padding-top: 20px;
+  padding-bottom: 50px
+}
+
+.button {
+
+  width: 140%;
+  height: 140%;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  font-family:'Volkhov', serif;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #fff;
+  border-color: #333;
+  color: #333;
+}
+
+
+
+
+
+
+
 /** janken **/
 
 
@@ -19,15 +62,23 @@
     background-color: #ECF6CE;
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding-left: 70px;
 }
 
 .hand{
   display: flex;
   justify-content:center;
   margin: auto;
-  width:40%;
-  padding-left: 350px;
+  height: 120px;
+  width:500px;
 }
+
+ .btn{
+   height: 60%;
+   width: 60%;
+ }
+
 
 .main-img{
   display: flex;
@@ -45,13 +96,18 @@
 }
 
 .result-content{
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  background-color: #ECF6CE;
 
 }
 
 
 .title{
+  display: flex;
+  justify-content: center;
+  margin: auto;
   font-family:'Volkhov', serif;
   font-size: 18px;
   color: #424242;
@@ -65,7 +121,8 @@
   font-family:'Volkhov', serif;
   font-size: 18px;
   color: #424242;
-  padding-top: 10px;
+  background-color: #ECF6CE;
+  padding-bottom: 30px;
 }
 
 .gif {
